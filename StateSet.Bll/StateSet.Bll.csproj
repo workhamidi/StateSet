@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Classes\Enum\**" />
+    <EmbeddedResource Remove="Classes\Enum\**" />
+    <None Remove="Classes\Enum\**" />
+  </ItemGroup>
+
+
+  <ItemGroup>
+    <ProjectReference Include="..\StateSet.Dal\StateSet.Dal.csproj" />
+  </ItemGroup>
+
+</Project>
