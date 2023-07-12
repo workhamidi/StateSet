@@ -9,7 +9,10 @@
         public string? Description { get; set; }
 
         public virtual Process ProcessNavigation { get; set; } = null!;
+        
         public virtual ICollection<GroupMember>? GroupMemberNavigation { get; set; } = null!;
+        
+        public virtual ICollection<ActivityTargets>? ActivityTargetsNavigation { get; set; } = null!;
 
     }
 }

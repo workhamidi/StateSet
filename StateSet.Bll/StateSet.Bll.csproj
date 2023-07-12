@@ -17,4 +17,9 @@
     <ProjectReference Include="..\StateSet.Dal\StateSet.Dal.csproj" />
   </ItemGroup>
 
+
+  <ItemGroup>
+    <Folder Include="Businesses\" />
+  </ItemGroup>
+
 </Project>

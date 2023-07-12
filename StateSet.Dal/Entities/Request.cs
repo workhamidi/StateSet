@@ -1,6 +1,4 @@
-﻿using StateSet.Dal.Enums;
-
-namespace StateSet.Dal.Entities
+﻿namespace StateSet.Dal.Entities
 {
     public class Request : BaseEntity
     {
@@ -10,6 +8,9 @@ namespace StateSet.Dal.Entities
 
         public string Title { get; set; } = null!;
 
+        public int  CurrentStateId { get; set; }
+
+        public virtual State CurrentStateNavigation { get; set; } = null!;
 
         public virtual Process ProcessNavigation { get; set; } = null!;
 
@@ -20,8 +21,10 @@ namespace StateSet.Dal.Entities
         public virtual ICollection<StakeholdersRequest>? StakeholdersRequestNavigation { get; set; }
         
         public virtual ICollection<RequestNotes>? RequestNotesNavigation { get; set; }
+       
+        public virtual ICollection<RequestAction>? RequestActionNavigation { get; set; }
 
-        // CurrentState
+        public virtual ICollection<RequestFile>? RequestFileNavigation { get; set; }
 
     }
 }

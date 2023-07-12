@@ -16,5 +16,9 @@
         
         public virtual ICollection<TransitionActions>? TransitionActionsNavigation { get; set; }
 
+        public virtual ICollection<ActionTargets>? ActionTargetsNavigation { get; set; }
+      
+        public virtual ICollection<RequestAction>? RequestActionNavigation { get; set; }
+
     }
 }

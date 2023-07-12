@@ -15,6 +15,8 @@
         public virtual ICollection<Activity>? ActivityNavigation { get; set; }
 
         public virtual ICollection<Group>? GroupNavigation { get; set; }
+
+        public virtual ICollection<ProcessAdmin>? ProcessAdminNavigation { get; set; }
         
     }
 }

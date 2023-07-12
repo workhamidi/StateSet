@@ -15,5 +15,9 @@
         public virtual Process ProcessNavigation { get; set; } = null!;
 
         public virtual ICollection<StateActivity>? StateActivitiesNavigation { get; set; }
+      
+        public virtual ICollection<ActivityTargets>? ActivityTargetsNavigation { get; set; }
+
+        public virtual ICollection<TransitionActivity>? TransitionActivityNavigation { get; set; }
     }
 }

@@ -9,7 +9,13 @@ namespace StateSet.Dal.Entities
         public virtual ICollection<Request>? RequestNavigation { get; set; }
 
         public virtual ICollection<StakeholdersRequest>? StakeholdersRequestNavigation { get; set; }
+       
         public virtual ICollection<GroupMember>? GroupMemberNavigation { get; set; }
+       
+        public virtual ICollection<RequestFile>? RequestFileNavigation { get; set; }
 
+        public virtual ICollection<ProcessAdmin>? ProcessAdminNavigation { get; set; }
+       
+        public virtual ICollection<RequestNotes>? RequestNotesNavigation { get; set; }
     }
 }
